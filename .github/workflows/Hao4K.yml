@@ -22,6 +22,7 @@ jobs:
     
     - name: Install dependencies
       run: python -m pip install --upgrade requests
+           python -m pip install --upgrade urllib3
     
     - name: Hao4k auto sign in
       env:
