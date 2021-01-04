@@ -40,7 +40,7 @@ def getfreeIPs():
     test_url = "https://ip.chinaz.com/"
 
     while True:
-        url = "http://www.66ip.cn/mo.php?sxb=&tqsl=10&port=80&export=&ktip=&sxa=&submit=%CC%E1++%C8%A1&textarea="
+        url = "http://www.66ip.cn/mo.php?sxb=&tqsl=50&port=80&export=&ktip=&sxa=&submit=%CC%E1++%C8%A1&textarea="
         r = requests.get(url, headers=headers)
         time.sleep(0.5)
         if r.status_code != 200:
@@ -54,7 +54,7 @@ def getfreeIPs():
 
             try:
                 req = requests.get(test_url, proxies=proxies, timeout=1.5, verify=False)
-                time.sleep(0.1)
+                time.sleep(0.2)
             except Exception as e:
                 continue
 
