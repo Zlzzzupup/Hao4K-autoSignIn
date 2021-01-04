@@ -32,7 +32,7 @@ def run(validIPs):
             time.sleep(1)
             success += 1
 
-    print("访问成功{0}次，访问失败{1}次！".format(success, fail))
+    print("访问成功{0}次，访问失败{1}次!!!".format(success, fail))
 
 
 def getfreeIPs():
