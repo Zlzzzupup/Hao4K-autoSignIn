@@ -42,6 +42,7 @@ def getfreeIPs():
     while True:
         url = "http://www.66ip.cn/mo.php?sxb=&tqsl=10&port=80&export=&ktip=&sxa=&submit=%CC%E1++%C8%A1&textarea="
         r = requests.get(url, headers=headers)
+        time.sleep(0.5)
         if r.status_code != 200:
             break
         IPs = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}', r.text)
