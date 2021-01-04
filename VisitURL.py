@@ -54,6 +54,7 @@ def getfreeIPs():
 
             try:
                 req = requests.get(test_url, proxies=proxies, timeout=1.5, verify=False)
+                time.sleep(0.1)
             except Exception as e:
                 continue
 
