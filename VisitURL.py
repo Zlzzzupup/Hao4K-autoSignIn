@@ -4,7 +4,7 @@ import os
 import time
 
 requests.packages.urllib3.disable_warnings()
-headers = {'Connection': 'keep-alive',
+headers = {'Connection': 'close',
            'Cache-Control': 'max-age=0',
            'Upgrade-Insecure-Requests': '1',
            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko)',
