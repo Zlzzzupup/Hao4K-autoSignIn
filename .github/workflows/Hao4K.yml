@@ -32,4 +32,4 @@ jobs:
     - name: Hao4k visit url
       env:
         HAO4K_URL: ${{ secrets.HAO4K_URL }}
-      run: python VisitURL.py
+      run: python VisitURL1.py
