@@ -1,5 +1,5 @@
 import requests
-
+import os 
 # 推广链接
 sponsoredURL = os.environ["HAO4K_URL"]
 
